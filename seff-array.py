@@ -540,7 +540,7 @@ def main(arrayID, m, t, c, v):
         cpuTime = line[8]
         state = line[7]
 
-        if maxRSS == "" or maxRSS == "" or cpuTime == "":
+        if maxRSS == "" or maxRSS == "0" or cpuTime == "":
             continue
 
         maxRSS = str_to_mb(maxRSS + "B")
